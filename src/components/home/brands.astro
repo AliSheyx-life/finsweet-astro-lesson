@@ -1,0 +1,41 @@
+---
+import BrandImage from '../../assets/images/feautured-in-icon2.png'
+---
+
+<section class="brands">
+    <div class="container wrapper">
+        <div class="brand">
+            <img src={BrandImage} alt="brand">
+        </div>
+        <div class="brand">
+            <img src={BrandImage} alt="brand">
+        </div>
+        <div class="brand">
+            <img src={BrandImage} alt="brand">
+        </div>
+        <div class="brand">
+            <img src={BrandImage} alt="brand">
+        </div>
+        <div class="brand">
+            <img src={BrandImage} alt="brand">
+        </div>
+        <div class="brand">
+            <img src={BrandImage} alt="brand">
+        </div>
+    </div>
+</section>
+
+<style lang="scss">
+    @import "../../assets/styles/variables.scss";
+
+    .brands {
+        padding-bottom: 100px;
+
+        .wrapper{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+</style>

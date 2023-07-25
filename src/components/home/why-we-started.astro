@@ -1,0 +1,73 @@
+---
+import TheButton from "../the-button.astro";
+import WeStartedImage from "../../assets/images/we-started.jpg";
+---
+
+<section class="why-we-started">
+    <div class="container wrapper">
+        <div class="layer">
+            <img src={WeStartedImage} alt="layer">
+        </div>
+        <div class="block">
+            <div class="card">
+                <p class="top-title">Why we started</p>
+                <h1 class="title">It started out as a simple idea and evolved into our passion</h1>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                <TheButton>
+                    <span>Discover our story</span>
+                    <i class="fas fa-chevron-right"></i>
+                </TheButton>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style lang="scss">
+ @import "../../assets/styles/variables.scss";
+
+ .why-we-started{
+    padding-bottom: 128px;
+
+    .wrapper{
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+
+        .layer{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 100%;
+            max-width: 950px;
+        }
+
+        .block{
+            padding-top: 120px;
+            max-width:  706px;
+            position: relative;
+
+            .card{
+                background-color: #fff;
+                padding: 80px;
+
+                .top-title{
+                    font-weight: 600;
+                    letter-spacing: 3px;
+                    text-transform: uppercase;
+                    margin-bottom: 24px;
+                }
+
+                .title{
+                    line-height: 64px;
+                }
+
+                .text{
+                    color: $gray-400;
+                    line-height: 28px;
+                    margin: 16px 0 32px;
+                }
+            }
+        }
+    }
+ }
+</style>
